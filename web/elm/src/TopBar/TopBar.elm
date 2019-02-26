@@ -14,12 +14,11 @@ import Char
 import Concourse
 import Dict
 import Effects exposing (Effect(..))
-import Html.Styled as Html exposing (Html)
-import Html.Styled.Attributes as HA
+import Html exposing (Html)
+import Html.Attributes as HA
     exposing
         ( attribute
         , class
-        , css
         , href
         , id
         , placeholder
@@ -28,8 +27,12 @@ import Html.Styled.Attributes as HA
         , type_
         , value
         )
-import Html.Styled.Events exposing (..)
+import Html.Events exposing (..)
 import Http
+import QueryString
+import RemoteData exposing (RemoteData)
+import Routes
+import ScreenSize exposing (ScreenSize(..))
 import TopBar.Model
     exposing
         ( Dropdown(..)
@@ -40,10 +43,6 @@ import TopBar.Model
         )
 import TopBar.Msgs exposing (Msg(..))
 import TopBar.Styles as Styles
-import QueryString
-import RemoteData exposing (RemoteData)
-import Routes
-import ScreenSize exposing (ScreenSize(..))
 import UserState exposing (UserState(..))
 import Window
 

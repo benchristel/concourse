@@ -4,12 +4,11 @@ import Callback exposing (Callback)
 import Effects exposing (Effect)
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, id, src, style)
-import Html.Styled as HS
+import Routes
 import TopBar.Model
 import TopBar.Msgs
 import TopBar.Styles
 import TopBar.TopBar as TopBar
-import Routes
 import UserState exposing (UserState)
 
 
@@ -69,7 +68,7 @@ view userState model =
             [ style TopBar.Styles.pageIncludingTopBar
             , id "page-including-top-bar"
             ]
-            [ TopBar.view userState TopBar.Model.None model.topBar |> HS.toUnstyled |> Html.map FromTopBar
+            [ TopBar.view userState TopBar.Model.None model.topBar |> Html.map FromTopBar
             , Html.div [ id "page-below-top-bar", style TopBar.Styles.pageBelowTopBar ]
                 [ Html.div [ class "notfound" ]
                     [ Html.div [ class "title" ] [ Html.text "404" ]

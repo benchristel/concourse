@@ -29,7 +29,6 @@ import Html.Styled.Attributes
         ( attribute
         , class
         , classList
-        , css
         , draggable
         , href
         , id
@@ -392,7 +391,7 @@ view userState model =
     Html.div []
         [ Html.div
             [ style TopBar.Styles.pageIncludingTopBar, id "page-including-top-bar" ]
-            [ Html.map FromTopBar (TopBar.view userState TopBar.Model.None model.topBar)
+            [ Html.map FromTopBar <| Html.fromUnstyled <| TopBar.view userState TopBar.Model.None model.topBar
             , Html.div [ id "page-below-top-bar", style TopBar.Styles.pageBelowTopBar ]
                 [ dashboardView model
                 ]
@@ -430,7 +429,7 @@ dashboardView model =
                                 , highDensity = model.highDensity
                                 }
                     ]
-                        ++ (List.map Html.fromUnstyled <| Footer.view model)
+                        ++ List.map Html.fromUnstyled (Footer.view model)
     in
     Html.div
         [ classList
