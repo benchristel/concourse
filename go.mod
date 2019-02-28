@@ -37,7 +37,7 @@ require (
 	github.com/cloudfoundry/go-socks5 v0.0.0-20180221174514-54f73bdb8a8e // indirect
 	github.com/cloudfoundry/socks5-proxy v0.0.0-20180530211953-3659db090cb2 // indirect
 	github.com/concourse/baggageclaim v1.3.5
-	github.com/concourse/dex v0.0.0-20181120155244-024cbea7e753
+	github.com/concourse/dex v0.0.0-20190227205709-0d3a1049c2d9
 	github.com/concourse/flag v1.0.0
 	github.com/concourse/go-archive v1.0.0
 	github.com/concourse/retryhttp v0.0.0-20181126170240-7ab5e29e634f
@@ -55,6 +55,7 @@ require (
 	github.com/fatih/color v1.7.0
 	github.com/fatih/structs v1.0.0 // indirect
 	github.com/felixge/httpsnoop v1.0.0
+	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-ldap/ldap v2.5.1+incompatible // indirect
 	github.com/go-openapi/jsonpointer v0.0.0-20180825180259-52eb3d4b47c6 // indirect
 	github.com/go-openapi/jsonreference v0.0.0-20180825180305-1c6a3fa339f2 // indirect
@@ -64,10 +65,7 @@ require (
 	github.com/go-test/deep v1.0.1 // indirect
 	github.com/gobuffalo/packr v1.13.7
 	github.com/gocql/gocql v0.0.0-20180920092337-799fb0373110 // indirect
-	github.com/gogo/protobuf v1.1.1 // indirect
-	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
-	github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c // indirect
 	github.com/google/go-cmp v0.2.0 // indirect
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
@@ -104,14 +102,14 @@ require (
 	github.com/json-iterator/go v1.1.5 // indirect
 	github.com/juju/ratelimit v1.0.1 // indirect
 	github.com/keybase/go-crypto v0.0.0-20180920171116-0b2a91ace448 // indirect
-	github.com/kr/pretty v0.1.0 // indirect
 	github.com/kr/pty v1.1.3
 	github.com/krishicks/yaml-patch v0.0.10
 	github.com/lib/pq v0.0.0-20181016162627-9eb73efc1fcc
 	github.com/mailru/easyjson v0.0.0-20180823135443-60711f1a8329 // indirect
 	github.com/mattn/go-colorable v0.1.1
-	github.com/mattn/go-isatty v0.0.4
+	github.com/mattn/go-isatty v0.0.5
 	github.com/mattn/go-runewidth v0.0.3 // indirect
+	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
 	github.com/miekg/dns v1.1.4
 	github.com/mitchellh/copystructure v1.0.0 // indirect
@@ -134,10 +132,10 @@ require (
 	github.com/peterhellberg/link v1.0.0
 	github.com/pkg/errors v0.8.1
 	github.com/pkg/term v0.0.0-20190109203006-aa71e9d9e942
+	github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
 	github.com/prometheus/client_golang v0.9.2
 	github.com/racksec/srslog v0.0.0-20180709174129-a4725f04ec91
 	github.com/ryanuber/go-glob v0.0.0-20170128012129-256dc444b735 // indirect
-	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
 	github.com/sirupsen/logrus v1.3.0
 	github.com/skratchdot/open-golang v0.0.0-20160302144031-75fb7ed4208c
@@ -154,8 +152,9 @@ require (
 	golang.org/x/net v0.0.0-20190125091013-d26f9f9a57f3 // indirect
 	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
 	golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4 // indirect
-	golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2 // indirect
-	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
+	google.golang.org/appengine v1.4.0 // indirect
+	google.golang.org/grpc v1.19.0 // indirect
+	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.27
 	gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce // indirect
 	gopkg.in/square/go-jose.v2 v2.1.8
